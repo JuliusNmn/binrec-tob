@@ -70,6 +70,7 @@ _freeze-s2e:
     git -C "{{justdir}}/s2e/source/qemu" checkout {{repo_qemu_commit}}
     git -C "{{justdir}}/s2e/source/qemu" submodule update
     git -C "{{justdir}}/s2e/source/scripts" checkout {{repo_scripts_commit}}
+    curl https://raw.githubusercontent.com/S2E/qemu/v3.0.0-se/.gitmodules >> "{{justdir}}/s2e/source/qemu/.gitmodules"
 
 
 ########## End: Installation Recipes ##########
