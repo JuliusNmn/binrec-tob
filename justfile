@@ -28,7 +28,7 @@ repo_s2e_commit               := "5349d353f4455f5a120d0c8d9790f742c656a706"
 repo_s2e_linux_kernel_commit  := "1e2dfecfc6a3e70e7dea478184aa1f13653dcbe1"
 repo_decree_commit            := "a523ec2ec1ca1e1369b33db755bed135af57e09c"
 repo_guest_images_commit      := "2afd9e4853936c3c38088272e90a927f62c9c58c"
-repo_qemu_commit              := "ec7d49e65cd896788bde98f38257489d6645a45a"
+repo_qemu_commit              := "638782a47ed9bb3f280b57a3627bb4e11b2a9cf1"
 repo_scripts_commit           := "3e6e6cbffcfe2ea7f5b823d2d5509838a54b89c9"
 ########## End: Environment and Recipe Variables ##########
 
