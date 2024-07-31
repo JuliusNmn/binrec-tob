@@ -71,7 +71,7 @@ _freeze-s2e:
     git -C "{{justdir}}/s2e/source/qemu" submodule update
     git -C "{{justdir}}/s2e/source/scripts" checkout {{repo_scripts_commit}}
     curl https://raw.githubusercontent.com/S2E/qemu/v3.0.0-se/.gitmodules >> "{{justdir}}/s2e/source/qemu/.gitmodules"
-
+    curl https://raw.githubusercontent.com/S2E/s2e-env/master/s2e_env/utils/google.py >> "{{justdir}}/s2e-env/s2e_env/utils/google.py"
 
 ########## End: Installation Recipes ##########
 
