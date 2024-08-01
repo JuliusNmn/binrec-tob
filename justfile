@@ -63,15 +63,16 @@ _binrec-init:
 
 # Freeze all S2E repositories to commits that have been tested against
 _freeze-s2e:
-    git -C "{{justdir}}/s2e/source/s2e" checkout {{repo_s2e_commit}}
-    git -C "{{justdir}}/s2e/source/s2e-linux-kernel" checkout {{repo_s2e_linux_kernel_commit}}
-    git -C "{{justdir}}/s2e/source/decree" checkout {{repo_decree_commit}}
-    git -C "{{justdir}}/s2e/source/guest-images" checkout {{repo_guest_images_commit}}
-    git -C "{{justdir}}/s2e/source/qemu" checkout {{repo_qemu_commit}}
-    git -C "{{justdir}}/s2e/source/qemu" submodule update
-    git -C "{{justdir}}/s2e/source/scripts" checkout {{repo_scripts_commit}}
-    curl https://raw.githubusercontent.com/S2E/qemu/v3.0.0-se/.gitmodules >> "{{justdir}}/s2e/source/qemu/.gitmodules"
-    curl https://raw.githubusercontent.com/S2E/s2e-env/master/s2e_env/utils/google.py >> "{{justdir}}/s2e-env/s2e_env/utils/google.py"
+    echo "using latest s2e versions (as of August 01, 2024)"
+    #git -C "{{justdir}}/s2e/source/s2e" checkout {{repo_s2e_commit}}
+    #git -C "{{justdir}}/s2e/source/s2e-linux-kernel" checkout {{repo_s2e_linux_kernel_commit}}
+    #git -C "{{justdir}}/s2e/source/decree" checkout {{repo_decree_commit}}
+    #git -C "{{justdir}}/s2e/source/guest-images" checkout {{repo_guest_images_commit}}
+    #git -C "{{justdir}}/s2e/source/qemu" checkout {{repo_qemu_commit}}
+    #git -C "{{justdir}}/s2e/source/qemu" submodule update
+    #git -C "{{justdir}}/s2e/source/scripts" checkout {{repo_scripts_commit}}
+    #curl https://raw.githubusercontent.com/S2E/qemu/v3.0.0-se/.gitmodules >> "{{justdir}}/s2e/source/qemu/.gitmodules"
+    #curl https://raw.githubusercontent.com/S2E/s2e-env/master/s2e_env/utils/google.py >> "{{justdir}}/s2e-env/s2e_env/utils/google.py"
 
 ########## End: Installation Recipes ##########
 
